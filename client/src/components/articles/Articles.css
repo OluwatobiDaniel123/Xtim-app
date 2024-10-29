@@ -1,0 +1,81 @@
+.text-bold {
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.text-bold:hover {
+  color: hsl(136, 40%, 39%);
+}
+
+.text-small {
+  font-size: small;
+  opacity: 0.6;
+  font-weight: 200;
+}
+
+.text-para {
+  font-size: 17px;
+  padding: 3px;
+  opacity: 0.6;
+  font-weight: 200;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.article-page {
+  height: 100vh;
+  background-color: hsl(217, 53%, 94%);
+}
+
+.article {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.article-page h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+.article-list li img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.article-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  background-color: rgb(247, 248, 249);
+  border-radius: 10px;
+  padding: 7px;
+  padding-bottom: 20px;
+  margin: 10px;
+  transition: all 400ms ease;
+}
+
+.article-list ul li:hover {
+  transition: all 400ms ease;
+}
+
+@media screen and (max-width: 950px) {
+  .article-page {
+    height: auto;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+} */
