@@ -1,19 +1,52 @@
 import React from "react";
 import CardItem from "./CardItem";
-import "./Cards.css";
+// import "./Cards.css";
 import img1 from "../../assets/images/image-currency.jpg";
 import img3 from "../../assets/images/image-restaurant.jpg";
 import img2 from "../../assets/images/image-plane.jpg";
 import img4 from "../../assets/images/img-4.jpg";
 import img5 from "../../assets/images/img-2.jpg";
+import slide10 from "../../assets/slide10.png";
+
+import styled from "styled-components";
 
 function Cards() {
+  const Cards = styled.div`
+    padding: 3rem 0;
+    background-image: url(${slide10});
+    background-size: cover; 
+    background-position: center;
+\
+  `;
+  const H1 = styled.h1`
+    text-align: center;
+    background: linear-gradient(90deg, #c15607, #ee0979, #4a00e0);
+    -webkit-background-clip: text;
+    color: transparent;
+  `;
+  const Container = styled.div`
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  `;
+  const Container2 = styled.div`
+    position: relative;
+    margin: 50px 0 45px;
+  `;
+  const Ul = styled.ul`
+    margin-bottom: 24px;
+    display: flex;
+    gap: 20px;
+  `;
   return (
-    <div className="cards">
-      <h1>Check out the EPIC destination</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+    <Cards>
+      <H1>Our Artists</H1>
+      <Container>
+        <Container2>
+          <Ul>
             <CardItem
               src={img1}
               text="Receive money in any currency with no fees"
@@ -28,33 +61,10 @@ function Cards() {
               label="By Wilson Hutton"
               path="/services"
             />
-          </ul>
-          <ul className="cards__items">
-            <CardItem
-              src={img3}
-              text="Treat yourself without worrying about money"
-              paragraph="Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you..."
-              label="By Wilson Hutton"
-              path="/services"
-            />
-            <CardItem
-              src={img4}
-              text="Experience Football on Top of the Himilayan Mountains"
-              paragraph="After a lot of hard work by the whole team. we're excited to launch our closed beta. It's easy to request an invite through the site..."
-              label="By Claire Robinson"
-              path="/products"
-            />
-            <CardItem
-              src={img5}
-              text="Our invite-only Beta accounts are now live!"
-              paragraph="After a lot of hard work by the whole team. we're excited to launch our closed beta. It's easy to request an invite through the site..."
-              label="By Wilson Hutton"
-              path="/sign-up"
-            />
-          </ul>
-        </div>
-      </div>
-    </div>
+          </Ul>
+        </Container2>
+      </Container>
+    </Cards>
   );
 }
 
