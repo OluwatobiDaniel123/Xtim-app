@@ -16,8 +16,7 @@ const CardsLink = styled(Link)`
 const CardsItemPicWrap = styled.figure`
   position: relative;
   width: 100%;
-  height: 400px;
-  padding-top: 67%;
+  height: 300px;
   overflow: hidden;
 
   &::after {
@@ -53,7 +52,7 @@ const CardsItemImg = styled.img`
 `;
 
 const CardsItemInfo = styled.div`
-  padding: 22px 33px 23px;
+  padding: 12px 13px 3px;
   background: #201f1f;
 `;
 

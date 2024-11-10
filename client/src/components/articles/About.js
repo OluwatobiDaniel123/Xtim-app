@@ -27,11 +27,11 @@ const About = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 3px;
   `;
 
   const H1 = styled.h1`
-    padding: 70px 0 0;
+    padding: 30px 0 0;
     font-size: 50px;
     // background: linear-gradient(90deg, #c15607, #ee0979, #4a00e0);
     background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
@@ -41,7 +41,7 @@ const About = () => {
   `;
   const P = styled.p`
     font-size: 18px;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
     // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
