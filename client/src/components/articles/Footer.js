@@ -58,7 +58,7 @@ const Footer = () => {
     font-weight: ${(props) => (props.isActive ? "800" : "600")};
     opacity: 0.8;
     &:hover {
-      color: rgb(0, 156, 0);
+      color: #4caf50;
     }
   `;
 

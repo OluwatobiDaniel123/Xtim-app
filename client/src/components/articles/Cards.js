@@ -2,11 +2,8 @@ import React from "react";
 import CardItem from "./CardItem";
 // import "./Cards.css";
 import img1 from "../../assets/slide17.jpg";
-
 import img2 from "../../assets/images/image-plane.jpg";
-
 import slide10 from "../../assets/slide10.png";
-
 import styled from "styled-components";
 
 function Cards() {
@@ -50,17 +47,17 @@ function Cards() {
           <Ul>
             <CardItem
               src={img1}
-              text="Receive money in any currency with no fees"
-              paragraph="The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single currency, why not try easybank today and enjoy spending in all..."
+              text="Explore MELIQ.101 music journey through their releases, from debut singles to their latest chart-topping album."
+              paragraph="Music is more than sound; it’s the heartbeat of life,’ says MELIQ.101. ‘I want every beat and lyric to resonate with my fans and connect on a deeper level."
               label="MELIQ.101"
-              path="/services"
+              path="/artists"
             />
             <CardItem
-              src={img2}
-              text="Take your Easybank card whenever you go"
-              paragraph="We want you to enjoy your travels. This is why we don't charge any fees on purchasing while you're abroad. We'll even show give you discount on any purchase you make like..."
-              label="By Wilson Hutton"
-              path="/services"
+              src={slide10}
+              text="Explore MELIQ.101 music journey through their releases, from debut singles to their latest chart-topping album."
+              paragraph="Music is more than sound; it’s the heartbeat of life,’ says MELIQ.101. ‘I want every beat and lyric to resonate with my fans and connect on a deeper level."
+              label="MELIQ.101"
+              path="/artists"
             />
           </Ul>
         </Container2>

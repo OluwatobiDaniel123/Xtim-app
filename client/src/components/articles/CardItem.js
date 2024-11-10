@@ -66,7 +66,7 @@ const CardsItemText = styled.h5`
   color: transparent;
 
   &:hover {
-    color: hsl(136, 40%, 39%);
+    color: #4caf50;
   }
 `;
 
