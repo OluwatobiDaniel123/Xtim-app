@@ -5,7 +5,7 @@ import styled from "styled-components";
 const CardsLink = styled(Link)`
   display: flex;
   flex-flow: column;
-  width: 400px;
+  width: 300px;
   box-shadow: 0.5px 1px 0.5px 2px #4caf50;
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 10px;

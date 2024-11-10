@@ -50,7 +50,6 @@ const About = () => {
   `;
   const Div3 = styled.div`
     width: 100%;
-    padding: 40px;
   `;
   const settings = {
     infinite: true,

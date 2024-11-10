@@ -102,10 +102,8 @@ function Artists() {
 
   const CardsItemParagraph = styled.p`
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
-
     font-size: 15px;
     padding: 10px 0;
     font-weight: 300;
