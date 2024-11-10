@@ -1,7 +1,7 @@
 import React from "react";
 import CardItem from "./CardItem";
 // import "./Cards.css";
-import img1 from "../../assets/slide17.jpg";
+import img1 from "../../assets/slide18.jpg";
 
 import slide10 from "../../assets/slide10.png";
 import { keyframes } from "styled-components";
@@ -35,7 +35,7 @@ function Artists() {
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
   `;
   const Container2 = styled.div`
@@ -46,7 +46,7 @@ function Artists() {
   const CardsItemPicWrap = styled.figure`
     position: relative;
     width: 100%;
-    height: 1600px;
+    height: 600px;
     padding-top: 67%;
     overflow: hidden;
 

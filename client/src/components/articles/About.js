@@ -91,7 +91,7 @@ const About = () => {
   return (
     <Div>
       <Div2>
-        <H1>Our Sonic Mission</H1>
+        <H1>Our Mission</H1>
         <P>
           XTiiM Record Label is a pioneering music label committed to
           discovering, nurturing, and empowering talented artists across diverse

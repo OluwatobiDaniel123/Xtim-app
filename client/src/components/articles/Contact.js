@@ -3,7 +3,7 @@ import styled from "styled-components";
 import emailjs from "emailjs-com";
 
 const ContactSection = styled.section`
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
