@@ -16,6 +16,7 @@ const CardsLink = styled(Link)`
 const CardsItemPicWrap = styled.figure`
   position: relative;
   width: 100%;
+  height: 700px;
   padding-top: 67%;
   overflow: hidden;
 
@@ -59,6 +60,10 @@ const CardsItemInfo = styled.div`
 const CardsItemText = styled.h5`
   color: white;
   font-size: 18px;
+  background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
+
+  -webkit-background-clip: text;
+  color: transparent;
 
   &:hover {
     color: hsl(136, 40%, 39%);
@@ -66,7 +71,11 @@ const CardsItemText = styled.h5`
 `;
 
 const CardsItemParagraph = styled.p`
-  color: white;
+  background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
+
+  -webkit-background-clip: text;
+  color: transparent;
+
   font-size: 15px;
   padding: 10px 0;
   font-weight: 300;

@@ -1,9 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import img1 from "../../assets/images/icon-online.svg";
-import img3 from "../../assets/images/icon-onboarding.svg";
-import img2 from "../../assets/images/icon-budgeting.svg";
-import img4 from "../../assets/images/icon-api.svg";
+
 import styled from "styled-components";
 import img5 from "../../../src/assets/Img5.jpg";
 import slide1 from "../../../src/assets/slide8.jpg";
@@ -13,7 +10,6 @@ import slide15 from "../../../src/assets/slide15.png";
 import slide14 from "../../../src/assets/slide14.png";
 import slide13 from "../../../src/assets/slide13.png";
 
-import { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -24,7 +20,6 @@ const About = () => {
     background: #201f1f;
     // width: 100%;
     // max-width: 1200px;
-
     // height: 150vh;
   `;
 
@@ -40,7 +35,6 @@ const About = () => {
     font-size: 50px;
     // background: linear-gradient(90deg, #c15607, #ee0979, #4a00e0);
     background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -51,7 +45,6 @@ const About = () => {
     text-align: center;
     // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
   `;
@@ -77,6 +70,10 @@ const About = () => {
     width: 50px;
     height: 500px;
     border-radius: 10px;
+    @media (max-width: 769px) {
+      height: 300px;
+      padding: 1px;
+    }
   `;
   const Img = styled.img`
     width: 90%;
@@ -84,7 +81,6 @@ const About = () => {
     border-radius: 10px;
     border: 2px solid purple;
     transition: all 0.3s linear;
-
     &:hover {
       transform: scale(1.05);
     }

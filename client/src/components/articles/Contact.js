@@ -79,7 +79,6 @@ const SocialDiv = styled.div`
 const ContactButton = styled.button`
   // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
   background: linear-gradient(90deg, #4caf50, #92781a, #a3c651);
-
   -webkit-background-clip: button;
   color: transparent;
   color: black;

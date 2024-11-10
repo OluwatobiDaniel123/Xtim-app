@@ -19,6 +19,10 @@ const Footer = () => {
 
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   `;
   const Box2 = styled.div`
     display: flex;
@@ -26,7 +30,8 @@ const Footer = () => {
     list-style: none;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+    font-weight: ${(props) => (props.isActive ? "800" : "600")};
     opacity: 0.9;
   `;
   const Box3 = styled.div`
@@ -37,18 +42,20 @@ const Footer = () => {
     list-style: none;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+    font-weight: ${(props) => (props.isActive ? "800" : "600")};
     opacity: 0.9;
   `;
   const Image1 = styled.img`
     height: 90px;
-    width: 150px;
   `;
   const Li = styled.li`
     display: flex;
     flex-direction: column;
+
     padding: 2px;
-    color: white;
+    color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+    font-weight: ${(props) => (props.isActive ? "800" : "600")};
     opacity: 0.8;
     &:hover {
       color: rgb(0, 156, 0);
@@ -58,8 +65,10 @@ const Footer = () => {
   const Li2 = styled.li`
     display: flex;
     flex-direction: column;
+
     padding: 2px;
-    color: white;
+    color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+    font-weight: ${(props) => (props.isActive ? "800" : "600")};
     opacity: 0.8;
     transition: all 0.3s ease;
     &:hover {
@@ -118,6 +127,8 @@ const Footer = () => {
   const P = styled.p`
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+    font-weight: ${(props) => (props.isActive ? "800" : "600")};
   `;
   const Box7 = styled.div``;
   return (

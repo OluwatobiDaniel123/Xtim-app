@@ -66,6 +66,9 @@ function Fade() {
     -webkit-background-clip: text;
     color: transparent;
     animation: ${dropAnimation} 3s ease-in forwards;
+    @media (max-width: 769px) {
+      font-size: 60px;
+    }
   `;
 
   const fadeIn = keyframes`
@@ -78,18 +81,21 @@ function Fade() {
 `;
 
   const Small = styled.p`
-    width: 50%;
     font-size: 18px;
+    text-algn: center;
     font-weight: bold;
     margin: 110px 0 10px 0;
     text-align: center;
     font-family: sans-serif;
     // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
     animation: ${fadeIn} 3s ease-in forwards;
+    @media (max-width: 769px) {
+      font-size: 16px;
+      margin: 90px 0 10px 0;
+    }
   `;
 
   const Button = styled.button`
@@ -110,6 +116,10 @@ function Fade() {
     &:hover {
       border: 3px solid #4caf50;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 769px) {
+      font-size: 18px;
+      margin: 290px 0 10px 0;
     }
   `;
 

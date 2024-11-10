@@ -1,11 +1,10 @@
 import React from "react";
 import CardItem from "./CardItem";
 // import "./Cards.css";
-import img1 from "../../assets/images/image-currency.jpg";
-import img3 from "../../assets/images/image-restaurant.jpg";
+import img1 from "../../assets/slide17.jpg";
+
 import img2 from "../../assets/images/image-plane.jpg";
-import img4 from "../../assets/images/img-4.jpg";
-import img5 from "../../assets/images/img-2.jpg";
+
 import slide10 from "../../assets/slide10.png";
 
 import styled from "styled-components";
@@ -14,13 +13,12 @@ function Cards() {
   const Cards = styled.div`
     padding: 3rem 0;
     background-image: url(${slide10});
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-\
   `;
   const H1 = styled.h1`
     text-align: center;
-    background: linear-gradient(90deg, #c15607, #ee0979, #4a00e0);
+    background: linear-gradient(0deg, #4caf50, #92781a, #a3c651);
     -webkit-background-clip: text;
     color: transparent;
   `;
@@ -40,10 +38,13 @@ function Cards() {
     margin-bottom: 24px;
     display: flex;
     gap: 20px;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   `;
   return (
     <Cards>
-      <H1>Our Artists</H1>
+      <H1>Meet Our Artists</H1>
       <Container>
         <Container2>
           <Ul>
@@ -51,7 +52,7 @@ function Cards() {
               src={img1}
               text="Receive money in any currency with no fees"
               paragraph="The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single currency, why not try easybank today and enjoy spending in all..."
-              label="By Claire Robinson"
+              label="MELIQ.101"
               path="/services"
             />
             <CardItem

@@ -213,7 +213,6 @@ const Box = styled.div`
 
 const LogoImage = styled.img`
   height: 90px;
-  width: 150px;
 `;
 
 const HeaderUl = styled.ul`
@@ -250,6 +249,7 @@ const NavItem = styled.li`
         ); 
         border-radius: 5px;
         transform: translateY(-3px); 
+        
       }
 `;
 
@@ -257,10 +257,9 @@ const NavIcon = styled.img`
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-left: auto;
-
+  margin: 10px;
   @media (min-width: 769px) {
-    display: none; /* Only show the nav icon on mobile */
+    display: none;
   }
 `;
 
@@ -292,15 +291,20 @@ const CloseIcon = styled.img`
 `;
 
 const SideNavItem = styled(Link)`
-  color: #fff;
+  color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
+  font-weight: ${(props) => (props.isActive ? "800" : "600")};
   text-decoration: none;
   font-size: 18px;
   padding: 10px 0;
   border-bottom: 1px solid #444;
   transition: color 0.3s;
-
+  transition: color 0.3s ease, transform 0.3s ease;
   &:hover {
-    color: #1e90ff;
+    color: #4caf50;
+    background-color: rgba(30, 844, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    transform: translateY(-3px);
   }
 `;
 
