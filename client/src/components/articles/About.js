@@ -22,6 +22,7 @@ const About = () => {
     flex-direction: column;
     align-items: center;
     padding: 3px;
+    margin: 0 0 12px;
   `;
 
   const H1 = styled.h1`
@@ -92,7 +93,7 @@ const About = () => {
           music to inspire, connect, and transform. Our team works closely with
           each artist to develop their full potential, from recording and
           production to marketing and live performances. Join us as we redefine
-          the future of music, one artist at a time.
+          the future of music, Changing The Atmosphere One Song At A Time.
         </P>
       </Div2>
       <Div3 className="slider-container">
