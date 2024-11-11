@@ -14,13 +14,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const Div = styled.div`
-    // background-image: url(${img5});
-    // background-size: cover; /* optional, scales the image */
-    // background-position: center; /* optional, centers the image */
     background: #201f1f;
-    // width: 100%;
-    // max-width: 1200px;
-    // height: 150vh;
   `;
 
   const Div2 = styled.div`
@@ -33,7 +27,6 @@ const About = () => {
   const H1 = styled.h1`
     padding: 30px 0 0;
     font-size: 50px;
-    // background: linear-gradient(90deg, #c15607, #ee0979, #4a00e0);
     background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
     -webkit-background-clip: text;
     color: transparent;
@@ -43,7 +36,6 @@ const About = () => {
     font-size: 18px;
     padding: 2px;
     text-align: center;
-    // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
     -webkit-background-clip: text;
     color: transparent;

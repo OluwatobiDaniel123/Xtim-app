@@ -60,10 +60,8 @@ const CardsItemText = styled.h5`
   color: white;
   font-size: 18px;
   background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
-
   -webkit-background-clip: text;
   color: transparent;
-
   &:hover {
     color: #4caf50;
   }
@@ -71,10 +69,8 @@ const CardsItemText = styled.h5`
 
 const CardsItemParagraph = styled.p`
   background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
-
   -webkit-background-clip: text;
   color: transparent;
-
   font-size: 15px;
   padding: 10px 0;
   font-weight: 300;

@@ -1,11 +1,7 @@
 import React from "react";
-import CardItem from "./CardItem";
-// import "./Cards.css";
 import img1 from "../../assets/slide18.jpg";
-
 import slide10 from "../../assets/slide10.png";
 import { keyframes } from "styled-components";
-
 import styled from "styled-components";
 
 function Artists() {
@@ -35,7 +31,6 @@ function Artists() {
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
-    // width: 90%;
     margin: 0 auto;
   `;
   const Container2 = styled.div`
@@ -91,10 +86,8 @@ function Artists() {
     color: white;
     font-size: 18px;
     background: linear-gradient(0deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
-
     &:hover {
       color: #4caf50;
     }

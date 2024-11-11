@@ -1,8 +1,6 @@
 import React from "react";
 import CardItem from "./CardItem";
-// import "./Cards.css";
 import img1 from "../../assets/slide18.jpg";
-import img2 from "../../assets/images/image-plane.jpg";
 import slide10 from "../../assets/slide10.png";
 import styled from "styled-components";
 
@@ -23,7 +21,6 @@ function Cards() {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
     width: 90%;
     margin: 0 auto;
   `;

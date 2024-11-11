@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactSection = styled.section`
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,17 +12,21 @@ const ContactSection = styled.section`
 `;
 
 const ContactContainer = styled.div`
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
   margin: 20px;
-  width: 100%;
-  max-width: 1200px;
+  gap: 20px;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
 `;
 
 const ContactForm = styled.form`
-  width: 450px;
+  width: 300px;
   border-radius: 7px;
   padding: 10px;
   display: flex;
@@ -33,7 +38,6 @@ const ContactForm = styled.form`
   h2 {
     font-variant: small-caps;
     font-size: 40px;
-    // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
 
     -webkit-background-clip: text;
@@ -51,9 +55,7 @@ const ContactForm = styled.form`
     background: transparent;
     border: 2px solid #92781a;
     resize: none;
-    // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
-
     -webkit-background-clip: text;
     color: transparent;
     &:hover {
@@ -64,20 +66,7 @@ const ContactForm = styled.form`
   }
 `;
 
-const SocialDiv = styled.div`
-  width: 300px;
-  height: 400px;
-  border-radius: 7px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  align-items: center;
-  box-shadow: 0 1px 4px 5px rgba(0, 0, 0, 0.1);
-`;
-
 const ContactButton = styled.button`
-  // background: linear-gradient(90deg, #4a00e0, #ee0979, #4a00e0);
   background: linear-gradient(90deg, #4caf50, #92781a, #a3c651);
   -webkit-background-clip: button;
   color: transparent;
@@ -94,6 +83,23 @@ const ContactButton = styled.button`
     border: 2px solid #4caf50;
   }
 `;
+
+const Box = styled.div`
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #92781a;
+  box-shadow: 0 150px 1000px 290px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(1.1);
+    border: 2px solid #4caf50;
+  }
+`;
+const P = styled.p``;
 
 const Contact = () => {
   const form = useRef();
@@ -139,6 +145,37 @@ const Contact = () => {
           />
           <ContactButton type="submit">Send Message</ContactButton>
         </ContactForm>
+
+        <Box>
+          <a target="_blank" href="mailto:danieloluwatobi765@gmail.com">
+            <MdOutlineMailOutline
+              style={{
+                color: "#4caf50",
+                width: 150,
+                fontSize: 120,
+                padding: 10,
+                margin: 10,
+              }}
+            />
+          </a>
+        </Box>
+
+        <Box>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=2348109830746"
+          >
+            <FaWhatsapp
+              style={{
+                color: "#4caf50",
+                width: 150,
+                fontSize: 120,
+                padding: 10,
+                margin: 10,
+              }}
+            />
+          </a>
+        </Box>
       </ContactContainer>
     </ContactSection>
   );

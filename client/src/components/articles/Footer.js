@@ -16,7 +16,6 @@ const Footer = () => {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
@@ -65,7 +64,6 @@ const Footer = () => {
   const Li2 = styled.li`
     display: flex;
     flex-direction: column;
-
     padding: 2px;
     color: ${(props) => (props.isActive ? "#4caf50" : "#92781a")};
     font-weight: ${(props) => (props.isActive ? "800" : "600")};
@@ -184,7 +182,7 @@ const Footer = () => {
             </Link>
 
             <Link to="/policy">
-              <Li>Privacy Policy</Li>
+              <Li>Events</Li>
             </Link>
           </Ul2>
         </Box5>
