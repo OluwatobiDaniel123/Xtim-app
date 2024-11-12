@@ -3,8 +3,12 @@ import img1 from "../../assets/slide18.jpg";
 import slide10 from "../../assets/slide10.png";
 import { keyframes } from "styled-components";
 import styled from "styled-components";
+import { useState, useEffect } from "react";
 
 function Artists() {
+  const [videos, setVideos] = useState([]);
+  const channelId = "UCB79ehpMBins1Uf9eVRb0Mg";
+
   const Artists = styled.div`
     padding: 3rem 0;
     background-image: url(${slide10});
@@ -30,7 +34,6 @@ function Artists() {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
     margin: 0 auto;
   `;
   const Container2 = styled.div`
@@ -102,9 +105,44 @@ function Artists() {
     font-weight: 300;
   `;
 
+  const CardsVideo = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
+  `;
+
+  const Video = styled.div`
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s linear;
+    &:hover {
+      transform: scale(1.03);
+    }
+  `;
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      const url = `https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        setVideos(data.items);
+      } catch (error) {
+        console.error("Error fetching videos:", error);
+      }
+    };
+
+    fetchVideos();
+  }, [channelId]);
+
   return (
     <Artists>
       <H1>MELIQ.101</H1>
+
       <Container>
         <Container2>
           <CardsItemPicWrap data-category="MELIQ.101">
@@ -122,6 +160,25 @@ function Artists() {
               the heartbeat of life,’ says MELIQ.101. ‘I want every beat and
               lyric to resonate with my fans and connect on a deeper level.
             </CardsItemParagraph>
+            <CardsVideo>
+              {videos.map((video) => {
+                const videoId = video.link.split("=")[1]; // Extract the video ID from the URL
+                return (
+                  <Video key={videoId}>
+                    <iframe
+                      width="100%"
+                      height="255"
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      frameBorder="0"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title={video.title}
+                    ></iframe>
+                    <CardsItemParagraph>{video.title}</CardsItemParagraph>
+                  </Video>
+                );
+              })}
+            </CardsVideo>
           </CardsItemInfo>
         </Container2>
       </Container>

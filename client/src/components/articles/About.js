@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-
 import styled from "styled-components";
-import img5 from "../../../src/assets/Img5.jpg";
 import slide1 from "../../../src/assets/slide8.jpg";
 import slide2 from "../../../src/assets/slide2.jpg";
 import slide16 from "../../../src/assets/slide16.png";
