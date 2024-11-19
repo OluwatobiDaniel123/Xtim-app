@@ -61,7 +61,7 @@ const About = () => {
     height: 500px;
     border-radius: 10px;
     @media (max-width: 769px) {
-      height: 300px;
+      height: 350px;
       padding: 1px;
     }
   `;
@@ -91,8 +91,10 @@ const About = () => {
           music to inspire, connect, and transform. Our team works closely with
           each artist to develop their full potential, from recording and
           production to marketing and live performances. Join us as we redefine
-          the future of music, Changing The Atmosphere One Song At A Time.
+          the future of music
         </P>
+        <H1>Our Vision</H1>
+        <P>Changing The Atmosphere One Song At A Time</P>
       </Div2>
       <Div3 className="slider-container">
         <Slider {...settings}>

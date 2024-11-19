@@ -61,7 +61,7 @@ function Fade() {
     color: transparent;
     animation: ${dropAnimation} 3s ease-in forwards;
     @media (max-width: 769px) {
-      font-size: 60px;
+      font-size: 50px;
     }
   `;
 
@@ -118,7 +118,7 @@ function Fade() {
 
   const text = [
     {
-      text: "XTiiM Music",
+      text: "XTiiM MUSIC",
       subtext:
         "Whether you’re a rising star or an established performer, XTiiM is here to amplify your voice and help your music reach audiences far and wide. Together, let’s turn dreams into unforgettable soundtracks.",
     },

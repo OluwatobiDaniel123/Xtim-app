@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
-import closeIcon from "../../assets/images/icon-close.svg";
-import navIcon from "../../assets/images/icon-hamburger.svg";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { IoClose } from "react-icons/io5";
+import { IoMenuOutline } from "react-icons/io5";
 
 const HeaderContainer = styled.div`
   background-color: #201f1f;
@@ -64,11 +64,8 @@ const NavItem = styled.li`
       }
 `;
 
-const NavIcon = styled.img`
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  margin: 10px;
+const NavIcon = styled.div`
+  padding-right: 10px;
   @media (min-width: 769px) {
     display: none;
   }
@@ -92,13 +89,6 @@ const SideNav = styled.div`
   @media (min-width: 769px) {
     display: none; /* Hide the side nav on larger screens */
   }
-`;
-
-const CloseIcon = styled.img`
-  width: 20px;
-  height: 20px;
-  align-self: flex-end;
-  cursor: pointer;
 `;
 
 const SideNavItem = styled(Link)`
@@ -159,12 +149,21 @@ const Header = () => {
         </HeaderUl>
 
         {/* Mobile Nav Icon */}
-        <NavIcon src={showNav ? closeIcon : navIcon} onClick={toggleNav} />
+        <NavIcon onClick={toggleNav} aria-label="Toggle navigation menu">
+          {showNav ? (
+            <IoClose style={{ fontSize: 50, color: "grey" }} />
+          ) : (
+            <IoMenuOutline style={{ fontSize: 45, color: "grey" }} />
+          )}
+        </NavIcon>
       </Box>
 
       {/* Side Nav for Mobile */}
       <SideNav show={showNav}>
-        <CloseIcon src={closeIcon} onClick={toggleNav} />
+        <IoClose
+          style={{ fontSize: 40, color: "grey", alignSelf: "flex-end" }}
+          onClick={toggleNav}
+        />
         <SideNavItem to="/" onClick={() => setShowNav(false)}>
           Home
         </SideNavItem>
