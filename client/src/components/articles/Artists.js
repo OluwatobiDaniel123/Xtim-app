@@ -11,9 +11,9 @@ function Artists() {
 
   const Artists = styled.div`
     padding: 3rem 0;
-    background-image: url(${slide10});
-    background-size: cover;
-    background-position: center;
+    // background-image: url(${slide10});
+    // background-size: cover;
+    // background-position: center;
   `;
   const fadeIn = keyframes`
   from {

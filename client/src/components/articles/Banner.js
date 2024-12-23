@@ -29,7 +29,7 @@ function Fade() {
 
   const Div = styled.div`
     width: 100%;
-    height: 110vh;
+    height: 100vh;
   `;
 
   const TextContainer = styled.div`
@@ -118,8 +118,18 @@ function Fade() {
 
   const text = [
     {
-      text: "XTiiM MUSIC",
+      text: "DANOVALAB 1",
       subtext:
+        "Whether you’re a rising star or an established performer, XTiiM is here to amplify your voice and help your music reach audiences far and wide. Together, let’s turn dreams into unforgettable soundtracks.",
+    },
+    {
+      text1: "DANOVALAB 2",
+      subtext1:
+        "Whether you’re a rising star or an established performer, XTiiM is here to amplify your voice and help your music reach audiences far and wide. Together, let’s turn dreams into unforgettable soundtracks.",
+    },
+    {
+      text2: "DANOVALAB 3",
+      subtext2:
         "Whether you’re a rising star or an established performer, XTiiM is here to amplify your voice and help your music reach audiences far and wide. Together, let’s turn dreams into unforgettable soundtracks.",
     },
   ];
@@ -132,31 +142,20 @@ function Fade() {
           <TextContainer>
             <Text> {text[0].text} </Text>
             <Small>{text[0].subtext}</Small>
-            <Button>Explore More</Button>
           </TextContainer>
         </Div>
         <Div>
           <Image src={img2} />
           <TextContainer>
-            <Text> {text[0].text} </Text>
-            <Small>{text[0].subtext}</Small>
-            <Button>Explore More</Button>
+            <Text> {text[1].text1} </Text>
+            <Small>{text[1].subtext1}</Small>
           </TextContainer>
         </Div>
         <Div>
           <Image src={img3} />
           <TextContainer>
-            <Text>{text[0].text}</Text>
-            <Small>{text[0].subtext}</Small>
-            <Button>Explore More</Button>
-          </TextContainer>
-        </Div>
-        <Div>
-          <Image src={img4} />
-          <TextContainer>
-            <Text>{text[0].text}</Text>
-            <Small>{text[0].subtext}</Small>
-            <Button>Explore More</Button>
+            <Text>{text[2].text2}</Text>
+            <Small>{text[2].subtext2}</Small>
           </TextContainer>
         </Div>
       </Slider>

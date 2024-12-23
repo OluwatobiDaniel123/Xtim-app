@@ -6,7 +6,6 @@ import {
   delete_Transaction,
   create_Transaction,
   get_Transaction,
-  get_Labels,
 } from "../controller/controller.js";
 
 const routes = express.Router();
@@ -21,7 +20,5 @@ routes
   .post(create_Transaction)
   .get(get_Transaction)
   .delete(delete_Transaction);
-
-routes.route("/api/labels").get(get_Labels);
 
 export default routes;

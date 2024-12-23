@@ -7,20 +7,57 @@ import slide16 from "../../../src/assets/slide16.png";
 import slide15 from "../../../src/assets/slide15.png";
 import slide14 from "../../../src/assets/slide14.png";
 import slide13 from "../../../src/assets/slide13.png";
+import slide7 from "../../../src/assets/slide7.jpg";
 
 import { Link } from "react-router-dom";
+import About_framer from "./About_framer";
 
 const About = () => {
   const Div = styled.div`
-    background: #201f1f;
-  `;
-
-  const Div2 = styled.div`
+    // background: #201f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3px;
+  `;
+
+  const Div2 = styled.div`
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px;
     margin: 0 0 12px;
+
+    @media (max-width: 769px) {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+  `;
+  const MissionTextWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0 43px 0;
+
+    @media (max-width: 769px) {
+      padding: 0 1px;
+      flex-direction: column;
+      align-items: center;
+    }
+  `;
+
+  const MissionTextImgDiv = styled.div`
+    width: 30%;
+    height: 390px;
+    padding-top: 143px;s
+    align-items: center;
+   
+
+    @media (max-width: 769px) {
+      width: 210px;
+      padding-top: 130px;
+    }
   `;
 
   const H1 = styled.h1`
@@ -34,7 +71,7 @@ const About = () => {
   const P = styled.p`
     font-size: 18px;
     padding: 2px;
-    text-align: center;
+    // text-align: center;
     background: linear-gradient(90deg, #4caf50, #ffdb58, #a3c651);
     -webkit-background-clip: text;
     color: transparent;
@@ -53,7 +90,7 @@ const About = () => {
     speed: 2000,
     className: "center",
     centerMode: true,
-    centerPadding: "-27px",
+    centerPadding: "-17px",
   };
   const Div4 = styled.div`
     padding: 5px;
@@ -72,7 +109,7 @@ const About = () => {
     border: 2px solid purple;
     transition: all 0.3s linear;
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
   `;
 
@@ -80,22 +117,25 @@ const About = () => {
 
   return (
     <Div>
-      <Div2>
-        <H1>Our Mission</H1>
-        <P>
-          XTiiM Record Label is a pioneering music label committed to
-          discovering, nurturing, and empowering talented artists across diverse
-          genres. Our mission is to provide a platform that amplifies unique
-          voices and fosters musical innovation, bringing fresh and original
-          sounds to audiences worldwide. At XTiiM, we believe in the power of
-          music to inspire, connect, and transform. Our team works closely with
-          each artist to develop their full potential, from recording and
-          production to marketing and live performances. Join us as we redefine
-          the future of music
-        </P>
-        <H1>Our Vision</H1>
-        <P>Changing The Atmosphere One Song At A Time</P>
-      </Div2>
+      <MissionTextWrapper>
+        <Div2>
+          <H1>Our Mission</H1>
+          <P>
+            Dedicated and innovative Web Developer with experience in designing,
+            developing, and managing complex web applications and sites.
+            Proficient in front-end and back-end development, including HTML,
+            CSS, JavaScript, and modern frameworks such as React and Node. Adept
+            at creating responsive, user-friendly interfaces and optimizing web
+            performance. Skilled in collaborating with cross-functional teams to
+            deliver high-quality digital solutions that enhance user experience
+            and drive business growth.
+          </P>
+        </Div2>
+        <MissionTextImgDiv>
+          <About_framer />
+        </MissionTextImgDiv>
+      </MissionTextWrapper>
+
       <Div3 className="slider-container">
         <Slider {...settings}>
           <Div4>

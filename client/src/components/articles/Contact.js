@@ -8,7 +8,7 @@ const ContactSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #201f1f;
+  // background: #201f1f;
 `;
 
 const ContactContainer = styled.div`
@@ -33,7 +33,7 @@ const ContactForm = styled.form`
   flex-direction: column;
   gap: 1.2rem;
   align-items: center;
-  box-shadow: 0 150px 1000px 290px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 150px 1000px 290px rgba(0, 0, 0, 0.1);
 
   h2 {
     font-variant: small-caps;
@@ -73,7 +73,7 @@ const ContactButton = styled.button`
   color: black;
   padding: 10px;
   width: 70%;
-  border-radius: 50px;
+  border-radius: 10px;
   outline: none;
   cursor: pointer;
   border: none;
@@ -86,12 +86,12 @@ const ContactButton = styled.button`
 
 const Box = styled.div`
   border-radius: 50%;
-  padding: 8px;
+  padding: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #92781a;
-  box-shadow: 0 150px 1000px 290px rgba(0, 0, 0, 0.1);
+  // border: 2px solid #92781a;
+  // box-shadow: 0 150px 1000px 290px rgba(0, 0, 0, 0.1);
   transition: all 0.3s linear;
 
   &:hover {
@@ -99,6 +99,17 @@ const Box = styled.div`
     border: 2px solid #4caf50;
   }
 `;
+
+const SocialDiv = styled.div`
+  border-radius: 7px;
+  padding: 8px;
+  // height: 170px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+`;
+
 const P = styled.p``;
 
 const Contact = () => {
@@ -145,37 +156,69 @@ const Contact = () => {
           />
           <ContactButton type="submit">Send Message</ContactButton>
         </ContactForm>
-
-        <Box>
-          <a target="_blank" href="mailto:danieloluwatobi765@gmail.com">
-            <MdOutlineMailOutline
-              style={{
-                color: "#4caf50",
-                width: 150,
-                fontSize: 120,
-                padding: 10,
-                margin: 10,
-              }}
-            />
-          </a>
-        </Box>
-
-        <Box>
-          <a
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=2348109830746"
-          >
-            <FaWhatsapp
-              style={{
-                color: "#4caf50",
-                width: 150,
-                fontSize: 120,
-                padding: 10,
-                margin: 10,
-              }}
-            />
-          </a>
-        </Box>
+        <SocialDiv>
+          <Box>
+            <a target="_blank" href="mailto:danieloluwatobi765@gmail.com">
+              <MdOutlineMailOutline
+                style={{
+                  color: "#4caf50",
+                  width: 50,
+                  fontSize: 50,
+                  padding: 4,
+                  margin: 4,
+                }}
+              />
+            </a>
+          </Box>
+          <Box>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=2348109830746"
+            >
+              <FaWhatsapp
+                style={{
+                  color: "#4caf50",
+                  width: 50,
+                  fontSize: 50,
+                  padding: 4,
+                  margin: 4,
+                }}
+              />
+            </a>
+          </Box>
+          <Box>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=2348109830746"
+            >
+              <FaWhatsapp
+                style={{
+                  color: "#4caf50",
+                  width: 50,
+                  fontSize: 50,
+                  padding: 4,
+                  margin: 4,
+                }}
+              />
+            </a>
+          </Box>
+          <Box>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=2348109830746"
+            >
+              <FaWhatsapp
+                style={{
+                  color: "#4caf50",
+                  width: 50,
+                  fontSize: 50,
+                  padding: 4,
+                  margin: 4,
+                }}
+              />
+            </a>
+          </Box>
+        </SocialDiv>
       </ContactContainer>
     </ContactSection>
   );

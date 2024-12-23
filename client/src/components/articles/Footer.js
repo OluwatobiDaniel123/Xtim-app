@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.jpg";
 import facebook from "../../assets/images/icon-facebook.svg";
 import youtube from "../../assets/images/icon-youtube.svg";
 import twitter from "../../assets/images/icon-twitter.svg";
@@ -19,7 +19,7 @@ const Footer = () => {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-    @media (max-width: 800px) {
+    @media (max-width: 675px) {
       flex-direction: column;
     }
   `;
